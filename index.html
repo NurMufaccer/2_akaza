@@ -1,14 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile</title>
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+    />
+
+    <!-- font poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="poppins-font">
     <div>
-        <h3>Akaza</h3>
-        <p>helooo...</p>
+      <div class="backG">
+        <header class="headerSec">
+          <section>
+            <div class="coverpic">
+              <div class="cover">
+                <div class="profile">
+                  <img class="proPic" src="./images/profile_pic.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </section>
+        </header>
+        <main class="profContainer">
+          <!-- profile -->
+          <section class="profSection">
+            <div>
+              <div class="profDiv">
+                <div class="name">
+                  <h3 class="proName">kelvin</h3>
+                  <p class="proDetails">Sales Manager</p>
+                  <p class="proDetails quotes">Car Quotes</p>
+                </div>
+
+                <p class="profDescription">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nulla, aliquam! Hic quasi, facere, odit corrupti voluptatibus
+                  sed laudantium officiis praesentium inventore blanditiis
+                  recusandae quibusdam rerum delectus ad quaerat.
+                </p>
+              </div>
+              <!-- buttons -->
+              <div class="contactContainer">
+                <div>
+                  <p class="detailTag">Email</p>
+                  <p class="detailInfo">kelvin@carquotes.com.sg</p>
+                </div>
+                <div>
+                  <p class="detailTag">Mobile No.</p>
+                  <p class="detailInfo">9123 4567</p>
+                </div>
+                <div>
+                  <p class="detailTag">Office No.</p>
+                  <p class="detailInfo">6123 4567</p>
+                </div>
+                <div>
+                  <p class="detailTag">Connect With Me No.</p>
+                  <div>
+                    <div class="social-buttons">
+                      <!-- whatsapp -->
+                      <div>
+                        <a href="#" target="blank" class="social-margin">
+                          <div class="social-icon icon">
+                            <?xml version="1.0" ?><svg
+                              viewBox="-9 1 40 40"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g>
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                  d="M2.004 22l1.352-4.968A9.954 9.954 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.954 9.954 0 0 1-5.03-1.355L2.004 22zM8.391 7.308a.961.961 0 0 0-.371.1 1.293 1.293 0 0 0-.294.228c-.12.113-.188.211-.261.306A2.729 2.729 0 0 0 6.9 9.62c.002.49.13.967.33 1.413.409.902 1.082 1.857 1.971 2.742.214.213.423.427.648.626a9.448 9.448 0 0 0 3.84 2.046l.569.087c.185.01.37-.004.556-.013a1.99 1.99 0 0 0 .833-.231c.166-.088.244-.132.383-.22 0 0 .043-.028.125-.09.135-.1.218-.171.33-.288.083-.086.155-.187.21-.302.078-.163.156-.474.188-.733.024-.198.017-.306.014-.373-.004-.107-.093-.218-.19-.265l-.582-.261s-.87-.379-1.401-.621a.498.498 0 0 0-.177-.041.482.482 0 0 0-.378.127v-.002c-.005 0-.072.057-.795.933a.35.35 0 0 1-.368.13 1.416 1.416 0 0 1-.191-.066c-.124-.052-.167-.072-.252-.109l-.005-.002a6.01 6.01 0 0 1-1.57-1c-.126-.11-.243-.23-.363-.346a6.296 6.296 0 0 1-1.02-1.268l-.059-.095a.923.923 0 0 1-.102-.205c-.038-.147.061-.265.061-.265s.243-.266.356-.41a4.38 4.38 0 0 0 .263-.373c.118-.19.155-.385.093-.536-.28-.684-.57-1.365-.868-2.041-.059-.134-.234-.23-.393-.249-.054-.006-.108-.012-.162-.016a3.385 3.385 0 0 0-.403.004z"
+                                  fill-rule="nonzero"
+                                />
+                              </g>
+                            </svg>
+                          </div>
+                        </a>
+                      </div>
+                      <!-- telegram -->
+                      <div>
+                        <a href="#" target="blank" class="social-margin">
+                          <div class="social-icon icon">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="-7 1 40 40"
+                              id="telegram"
+                            >
+                              <path
+                                d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"
+                              ></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </div>
+                      <!-- globe -->
+                      <div>
+                        <a href="#" target="blank" class="social-margin">
+                          <div class="social-icon icon">
+                            <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                            <svg
+                              id="Layer_1"
+                              version="1.1"
+                              viewBox="-23 -1 95 95"
+                              xml:space="preserve"
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                            >
+                              <rect fill="none" />
+                              <circle
+                                cx="25"
+                                cy="25"
+                                fill="none"
+                                r="24"
+                                stroke="#000000"
+                                stroke-linecap="round"
+                                stroke-miterlimit="10"
+                                stroke-width="3"
+                              />
+                              <ellipse
+                                cx="25"
+                                cy="25"
+                                fill="none"
+                                rx="12"
+                                ry="24"
+                                stroke="#000000"
+                                stroke-linecap="round"
+                                stroke-miterlimit="10"
+                                stroke-width="3"
+                              />
+                              <path
+                                d="M6.365,40.438C10.766,37.729,17.479,36,25,36  c7.418,0,14.049,1.682,18.451,4.325"
+                                fill="none"
+                                stroke="#000000"
+                                stroke-miterlimit="10"
+                                stroke-width="3"
+                              />
+                              <path
+                                d="M43.635,9.563C39.234,12.271,32.521,14,25,14  c-7.417,0-14.049-1.682-18.451-4.325"
+                                fill="none"
+                                stroke="#000000"
+                                stroke-miterlimit="10"
+                                stroke-width="3"
+                              />
+                              <line
+                                fill="none"
+                                stroke="#000000"
+                                stroke-miterlimit="10"
+                                stroke-width="3"
+                                x1="1"
+                                x2="49"
+                                y1="25"
+                                y2="25"
+                              />
+                              <line
+                                fill="none"
+                                stroke="#000000"
+                                stroke-miterlimit="10"
+                                stroke-width="3"
+                                x1="25"
+                                x2="25"
+                                y1="1"
+                                y2="49"
+                              />
+                            </svg>
+                          </div>
+                        </a>
+                      </div>
+                      <!-- facebook -->
+                      <div>
+                        <a href="#" target="blank" class="social-margin">
+                          <div class="social-icon icon">
+                            <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                            <svg
+                              id="Layer_1"
+                              version="1.1"
+                              viewBox="-16 5 90 90"
+                              xml:space="preserve"
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                            >
+                              <path
+                                d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"
+                              />
+                            </svg>
+                          </div>
+                        </a>
+                      </div>
+                      <!-- linkedin -->
+                      <div>
+                        <a href="#" target="blank" class="social-margin">
+                          <div class="social-icon icon">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="-300 -50 1000 1000"
+                            >
+                              <path
+                                d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+                              />
+                            </svg>
+                          </div>
+                        </a>
+                      </div>
+                      <!-- facebook rating -->
+                      <div>
+                        <a href="#" target="blank" class="social-margin">
+                          <div class="circular-icon">
+                            <img
+                              class="facebook-icon"
+                              src="./images/facebook.jpeg"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+                      </div>
+                      <!-- tiktok -->
+                      <div>
+                        <a href="#" target="blank" class="social-margin">
+                          <div class="social-icon icon">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="-300 -50 1000 1000"
+                            >
+                              <path
+                                d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"
+                              />
+                            </svg>
+                          </div>
+                        </a>
+                      </div>
+                      <!-- twiter -->
+                      <div>
+                        <a href="#" target="blank" class="social-margin">
+                          <div class="social-icon icon">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="-300 -50 1000 1000"
+                            >
+                              <path
+                                d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"
+                              />
+                            </svg>
+                          </div>
+                        </a>
+                      </div>
+                      <!-- instagram -->
+                      <div>
+                        <a href="#" target="blank" class="social-margin">
+                          <div class="social-icon icon">
+                            <?xml version="1.0" ?><svg
+                              viewBox="-75 0 400 400"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect fill="none" height="256" width="256" />
+                              <circle cx="128" cy="128" r="32" />
+                              <path
+                                d="M172,28H84A56,56,0,0,0,28,84v88a56,56,0,0,0,56,56h88a56,56,0,0,0,56-56V84A56,56,0,0,0,172,28ZM128,176a48,48,0,1,1,48-48A48,48,0,0,1,128,176Zm52-88a12,12,0,1,1,12-12A12,12,0,0,1,180,88Z"
+                              />
+                            </svg>
+                          </div>
+                        </a>
+                      </div>
+                      <!-- snapchat -->
+                      <div>
+                        <a href="#" target="blank" class="social-margin">
+                          <div class="social-icon icon">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="-16 0 80 80"
+                              id="snapchat"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M24.462 0h-.12l-.825.009c-1.066 0-3.198.15-5.488 1.158a12.228 12.228 0 0 0-3.5 2.314c-1.208 1.144-2.193 2.554-2.925 4.192-1.073 2.398-.818 6.438-.614 9.684l.001.005.066 1.065c-.157.072-.412.148-.788.148-.605 0-1.325-.193-2.138-.573a1.917 1.917 0 0 0-.814-.167c-.485 0-.995.142-1.438.401-.557.327-.917.788-1.015 1.299-.064.338-.061 1.006.683 1.684.41.373 1.011.717 1.788 1.023.204.08.445.156.702.237.888.282 2.234.708 2.584 1.53.178.418.102.967-.226 1.631-.009.018-.018.036-.025.055-.082.19-.847 1.918-2.416 3.74-.891 1.035-1.873 1.901-2.917 2.573a10.744 10.744 0 0 1-4.095 1.595 1.122 1.122 0 0 0-.94 1.169c.01.165.048.33.116.488l.001.003c.23.535.761.99 1.625 1.39 1.056.489 2.635.9 4.694 1.222.104.197.212.693.286 1.032.079.36.16.732.277 1.126.125.427.45.937 1.287.937.317 0 .681-.072 1.104-.153.618-.121 1.463-.286 2.518-.286.585 0 1.191.051 1.801.152 1.176.196 2.19.91 3.363 1.737 1.718 1.21 3.661 2.58 6.63 2.58.082 0 .163-.003.243-.008a7.6 7.6 0 0 0 .348.008c2.971 0 4.914-1.37 6.63-2.58l.002-.002c1.174-.826 2.186-1.54 3.362-1.735.61-.1 1.216-.152 1.801-.152 1.008 0 1.806.128 2.519.267.465.09.826.135 1.103.135h.056c.611 0 1.06-.335 1.232-.92.114-.386.195-.748.276-1.115.07-.318.181-.828.285-1.027 2.06-.323 3.639-.733 4.695-1.222.862-.399 1.393-.852 1.624-1.385.069-.16.11-.325.118-.493a1.122 1.122 0 0 0-.94-1.17c-6.417-1.054-9.308-7.628-9.427-7.907a.8.8 0 0 0-.026-.055c-.328-.664-.404-1.212-.226-1.63.35-.823 1.695-1.249 2.584-1.53.257-.081.5-.158.702-.238.876-.344 1.502-.718 1.915-1.143.493-.507.589-.992.583-1.31-.015-.768-.604-1.45-1.541-1.785a2.777 2.777 0 0 0-1.045-.199c-.25 0-.62.034-.971.198-.751.35-1.424.541-2 .569a1.814 1.814 0 0 1-.663-.146l.057-.928.009-.138c.205-3.248.46-7.29-.612-9.69-.736-1.645-1.724-3.058-2.937-4.205a12.26 12.26 0 0 0-3.513-2.314A14.01 14.01 0 0 0 24.462 0"
+                              ></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </div>
+                      <!-- youtube -->
+                      <div>
+                        <a href="#" target="blank" class="social-margin">
+                          <div class="social-icon icon">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="-5 5 50 50"
+                              id="youtube"
+                            >
+                              <path
+                                d="M33.69 13.13a3.59 3.59 0 0 0-2.51-2.52C28.94 10 20 10 20 10s-8.94 0-11.18.59a3.65 3.65 0 0 0-2.51 2.54A37.56 37.56 0 0 0 5.72 20a37.45 37.45 0 0 0 .59 6.87 3.59 3.59 0 0 0 2.51 2.52C11.08 30 20 30 20 30s8.94 0 11.18-.59a3.57 3.57 0 0 0 2.51-2.52 37.56 37.56 0 0 0 .59-6.89 35.11 35.11 0 0 0-.59-6.87ZM17.15 24.28v-8.56L24.59 20Z"
+                              ></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </div>
+
+                      <!-- google rating -->
+                      <div>
+                        <a href="#" target="blank" class="social-margin">
+                          <div class="circular-icon">
+                            <img
+                              class="google-icon"
+                              src="./images/google.jpeg"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- address -->
+          <section class="addressContainer">
+            <h4 class="addressText">Address<sup>*</sup></h4>
+          </section>
+
+          <!-- button -->
+          <section class="footerBtn">
+            <button class="sticky-button">LET'S CONNECT!</button>
+          </section>
+        </main>
+      </div>
     </div>
-</body>
+    <script>
+      const button = document.querySelector(".sticky-button");
+
+      function materializeEffect(event) {
+        const circle = document.createElement("div");
+        const x = event.layerX;
+        const y = event.layerY;
+        circle.classList.add("circle");
+        circle.style.left = `${x}px`;
+        circle.style.top = `${y}px`;
+        this.appendChild(circle);
+      }
+
+      button.addEventListener("click", materializeEffect);
+    </script>
+  </body>
 </html>
