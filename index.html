@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile</title>
+
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -18,6 +19,14 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- map api -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js? 
+         key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./index.js"></script>
   </head>
   <body class="poppins-font">
     <div>
@@ -65,8 +74,9 @@
                   <p class="detailTag">Office No.</p>
                   <p class="detailInfo">6123 4567</p>
                 </div>
+                <!-- contact info -->
                 <div>
-                  <p class="detailTag">Connect With Me No.</p>
+                  <p class="detailTag">Connect with me on.</p>
                   <div>
                     <div class="social-buttons">
                       <!-- whatsapp -->
@@ -320,36 +330,42 @@
                     </div>
                   </div>
                 </div>
+                <!-- address location -->
+                <div>
+                  <p class="detailTag">Address</p>
+                  <p class="detailInfo">
+                    1 kaki Bukit Road 1, Kaki Bukit 415934, Singapore.
+                  </p>
+                  <!--The div element for the map -->
+                  <div id="map"></div>
+                </div>
               </div>
             </div>
           </section>
 
-          <!-- address -->
-          <section class="addressContainer">
-            <h4 class="addressText">Address<sup>*</sup></h4>
-          </section>
-
           <!-- button -->
-          <section class="footerBtn">
-            <button class="sticky-button">LET'S CONNECT!</button>
+          <section class="btn">
+            <button class="btn-pri" role="button">Add to Contact</button>
           </section>
         </main>
       </div>
     </div>
     <script>
-      const button = document.querySelector(".sticky-button");
-
-      function materializeEffect(event) {
-        const circle = document.createElement("div");
-        const x = event.layerX;
-        const y = event.layerY;
-        circle.classList.add("circle");
-        circle.style.left = `${x}px`;
-        circle.style.top = `${y}px`;
-        this.appendChild(circle);
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: 1.3344994, lng: 103.9020194 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
       }
-
-      button.addEventListener("click", materializeEffect);
     </script>
   </body>
 </html>
